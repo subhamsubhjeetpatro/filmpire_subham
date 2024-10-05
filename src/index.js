@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // No destructuring here
 import App from "./components/App";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
